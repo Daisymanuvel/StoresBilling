@@ -57,15 +57,15 @@ public static void main(String[] args) {
 		List<StoresBilling> c = new ArrayList<StoresBilling>();
 		s = new Scanner(System.in);
 		 double totalcost=0.0;
-        System.out.println("**********WELCOME TO STORES**********");
+        System.out.println("*****************************************WELCOME TO SUPER STORES*****************************************");
         
         
         //format of date and time
-        SimpleDateFormat f = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        SimpleDateFormat f = new SimpleDateFormat("dd/MM/yyyy  HH:mm:ss");
         Date d=new Date();
         Calendar cal = Calendar.getInstance();
         String[]days=new String[] {"Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"};
-        System.out.println("Date:"+f.format(d)+" "+days[cal.get(Calendar.DAY_OF_WEEK)-1]);
+        System.out.println("Date:"+f.format(d)+"  "+days[cal.get(Calendar.DAY_OF_WEEK)-1]);
 int p;
 do {
 	System.out.println("1.INSERT");
@@ -199,6 +199,8 @@ double price=s.nextDouble();
  
 }
 while(p!=0);
+	System.out.println("**************************  THANK YOU FOR PURCHASING  **************************");
+	System.out.println("******************  VISIT AGAIN  ******************");
 }
 }	
  	
